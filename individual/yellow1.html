@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webpage Title</title>
+    <link rel="stylesheet" href="yellow1.css">
+    <script src="nav.js"></script>
+    <script src="data.js"></script>
+    <!-- <script defer src="yellow1.js"></script> -->
+</head>
+<body>
+
+   
+    <nav>
+    </nav>
+
+    <main>
+    </main>
+    
+
+    <div class="foot">
+        <div class="header">Road sign 1</div>
+        <div class="header">Instructions</div>
+        <div></div>
+        <div class="description">this is sample text to see if the layout is working. please ignore this text i dont know what thus is this might be an explanation of what i think of the sign (from the eye of a graphic designer)</div>
+        <div class="description">Choose a colour for each text<br>
+            Drag the text on to the sign<br>
+            Play with the font size</div>
+        <div class="colors" id="swatches">
+        </div>
+    </div>
+
+   
+
+</body>
+<script>
+    generateMain(content[0]);
+    generateColorSwatches(content[0].color)
+</script>
+</html>
