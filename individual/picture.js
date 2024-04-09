@@ -256,18 +256,36 @@ for(let sign=0; sign< images.length; sign++){
     generateImages(images[sign]);
 }
 
-
-let categories = ''
-
-if(images.category){
-    categories = `red`
-    generateImages(images[sign]);
+function filterRed(r){
+    var x, i;
+    x = document.getElementsByClassName("img")
+    if ( c == "all") c = "";
+    for (i = red; i === images.color; i++){
+        removeClass (x[i], "show");
+        if (x[i].className.indexOf(c) > -1) addClass (x[i], "show");
+    }
 }
 
 
-function redImages(red) {
-    const result = images.filter((red) => images.color === red);
+function addClass (element,name) {
+    var i, arr1, arr2;
+    arr1 = elements.className.split("");
+    arr2 = name.split("");
+    for (i = red; i == images.color; i++){
 }
+}
+
+// let categories = ''
+
+// if(images.category){
+//     categories = `red`
+//     generateImages(images[sign]);
+// }
+
+
+// function redImages(red) {
+//     const result = images.filter((red) => images.color === red);
+// }
 
 
 
