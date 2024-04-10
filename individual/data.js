@@ -2,21 +2,24 @@ const content =
 [
     {
         "bigTitle": "BENGALURU CITY TRAFFIC POLICE",
-        "bigTitleClass": 'titlesans redtext',
+        "bigTitleClass": 'titlesans',
         "bodyText1": 'bodytext1',
-        "color": '#D71D2C',
+        "textcolor": 'redtext',
 
         "titleOne": "Vaccination is better than cure",
-        "titleOneClass": 'title1sans bluetext',
+        "titleOneClass": 'title1sans',
         "bodyText2":'bodytext2',
+        "textOnecolor": 'bluetext',
 
         "titleTwo": "MAHA CEMENT",
-        "titleTwoClass": 'title2 blacktext',
+        "titleTwoClass": 'title2',
         "bodyText3":'bodytext3',
+        "textTwocolor": 'blacktext',
 
         "titleThree": "BUILD IT STRONG",
-        "titleThreeClass": 'title3 redtext',
+        "titleThreeClass": 'title3',
         "bodyText4":'bodytext4',
+        "textThreecolor": 'redtext',
 
         "header1": "Road Sign 1",
         "headerClass": 'roadsignname',
@@ -45,22 +48,23 @@ let whitetext = "#E6E7E8";
 function generateMain(data){
     const main = document.querySelector('main');
     main.innerHTML = `
-<div class="editflex">
+<div class="editflex" >
     <div class="edit">edit</div>
   </div>
-  <div class="${data.bigTitleClass}" oninput="changeTextColor()">${data.bigTitle}</div>
-  <div class="${data.bodyText1}">Text color &nbsp <input type="color" id="colorPicker" value = > </div>
-  <div class="${data.titleOneClass}">${data.titleOne}</div>
-  <div class="${data.bodyText2}">Text color &nbsp <input type="color" value="${data.color}"></div>
-  <div class="${data.titleTwoClass}">${data.titleTwo}</div>
-  <div class="${data.bodyText3}">Text color &nbsp <input type="color" value="${data.color}"></div>
-  <div class="${data.titleThreeClass}">${data.titleThree}</div>
-  <div class="${data.bodyText4}">Text color &nbsp <input type="color" value="${data.color}"></div>
+  <main>
+  <div class="${data.bigTitleClass} ${data.textcolor}" id="mainheader">${data.bigTitle}</div>
+  <div class="${data.bodyText1}">Text color &nbsp <input type="color" id="colorPicker"> </div>
+  <div class="${data.titleOneClass} ${data.textOnecolor}">${data.titleOne}</div>
+  <div class="${data.bodyText2}">Text color &nbsp <input type="color" id="colorOnePicker"></div>
+  <div class="${data.titleTwoClass} ${data.textTwocolor}">${data.titleTwo}</div>
+  <div class="${data.bodyText3}">Text color &nbsp <input type="color" id="colorTwoPicker"></div>
+  <div class="${data.titleThreeClass} ${data.textThreecolor}">${data.titleThree}</div>
+  <div class="${data.bodyText4}">Text color &nbsp <input type="color" id="colorThreePicker"></div>
   <img src="${data.img}"></img>
   <img src="${data.realimg}" class="${data.realimgClass}"></img>
+  </main>
   `
-  }
-
+  } 
   
 
   function generateCommon(text){
@@ -93,9 +97,32 @@ function generateMain(data){
 
 
 
-    let myElem = document.querySelector(".titlesans")
-    let colorInput = document.getElementById("colorPicker")
-   
-    function changeTextColor(){
-       myElem.style.color = colorInput.value;
+    function makeDivsDraggable(container) {
+        const divs = container.querySelectorAll("div");
+    
+        divs.forEach(div => {
+            div.draggable = true;
+        });
     }
+    
+    const mainElement = document.querySelector("main");
+    makeDivsDraggable(mainElement);
+
+
+
+    
+
+    // const container = document.querySelector(".titlesans");
+    // function onMouseDrag({ movementX, movementY }) {
+    //     let getContainerStyle = window.getComputedStyle(container);
+    //     let leftValue = parseInt(getContainerStyle.left);
+    //     let topValue = parseInt(getContainerStyle.top);
+    //     container.style.left = `${leftValue + movementX}px`;
+    //     container.style.top = `${topValue + movementY}px`;
+    // }
+    // container.addEventListener("mousedown", () => {
+    //     container.addEventListener("mousemove", onMouseDrag);
+    // });
+    // document.addEventListener("mouseup", () => {
+    //     container.removeEventListener("mousemove", onMouseDrag);
+    // });

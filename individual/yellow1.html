@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Webpage Title</title>
     <link rel="stylesheet" href="data.css">
+    <script  src="data.js"></script>
     <script src="nav.js"></script>
-    <script src="data.js"></script>
 </head>
 <body>
 
     <nav>
     </nav>
 
-    <main>
-        
+    <main>  
     </main>
     
     <footer>
@@ -26,8 +25,73 @@
 <script>
     generateMain(content[0]);
     generateCommon(content[0]);
-    addTaskWithColorPicker(content[0].color);
     generateColorSwatches(content[0].color)
+
+            var colors; 
+            var defaultColor = "#D71D2C"; 
+            window.addEventListener("load", startup, false); 
+            function startup() { 
+                colors = document.querySelector("#colorPicker"); 
+                colors.value = defaultColor; 
+                colors.addEventListener("input", update, false); 
+                colors.select(); 
+            } 
+            function update(event) { 
+                var p = document.querySelector(`.${content[0].bigTitleClass}`); 
+                if (p)  
+                { p.style.color = event.target.value; }
+            } 
+
+
+            var colorsOne; 
+            var defaultColorOne = "#182F6D"; 
+            window.addEventListener("load", startupOne, false); 
+            function startupOne() { 
+                colorsOne = document.querySelector("#colorOnePicker"); 
+                colorsOne.value = defaultColorOne; 
+                colorsOne.addEventListener("input", updateOne, false); 
+                colorsOne.select(); 
+            } 
+            function updateOne(event) { 
+                var q = document.querySelector(`.${content[0].titleOneClass}`); 
+                if (q)  
+                { q.style.color = event.target.value; }
+            } 
+
+
+            var colorsTwo; 
+            var defaultColorTwo = "#1E1E1E"; 
+            window.addEventListener("load", startupTwo, false); 
+            function startupTwo() { 
+                colorsTwo = document.querySelector("#colorTwoPicker"); 
+                colorsTwo.value = defaultColorTwo; 
+                colorsTwo.addEventListener("input", updateTwo, false); 
+                colorsTwo.select(); 
+            } 
+            function updateTwo(event) { 
+                var r = document.querySelector(`.${content[0].titleTwoClass}`); 
+                if (r)  
+                { r.style.color = event.target.value; }
+            } 
+
+
+            var colorsThree; 
+            var defaultColorThree = "#D71D2C"; 
+            window.addEventListener("load", startupThree, false); 
+            function startupThree() { 
+                colorsThree = document.querySelector("#colorThreePicker"); 
+                colorsThree.value = defaultColorThree; 
+                colorsThree.addEventListener("input", updateThree, false); 
+                colorsThree.select(); 
+            } 
+            function updateThree(event) { 
+                var s = document.querySelector(`.${content[0].titleThreeClass}`); 
+                if (s)  
+                { s.style.color = event.target.value; }
+            }
+
+
+            
 </script>
 
 </html>
