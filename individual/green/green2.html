@@ -5,9 +5,9 @@
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Webpage Title</title>
-    <link rel="stylesheet" href="data.css">
-    <script  src="data.js"></script>
-    <script src="nav.js"></script>
+    <link rel="stylesheet" href="../data.css">
+    <script  src="../data.js"></script>
+    <script src="../nav.js"></script>
 </head>
 <body>
 
@@ -23,12 +23,12 @@
 </body>
 
 <script>
-    generateMain(content[0]);
-    generateCommon(content[0]);
-    generateColorSwatches(content[0].color)
+    generateMain(content[3]);
+    generateCommon(content[3]);
+    generateColorSwatches(content[3].color)
 
             var colors; 
-            var defaultColor = "#D71D2C"; 
+            var defaultColor = "#E6E7E8"; 
             window.addEventListener("load", startup, false); 
             function startup() { 
                 colors = document.querySelector("#colorPicker"); 
@@ -37,14 +37,14 @@
                 colors.select(); 
             } 
             function update(event) { 
-                var p = document.querySelector(`.${content[0].bigTitleClass}`); 
+                var p = document.querySelector(`.${content[3].bigTitleClass}`); 
                 if (p)  
                 { p.style.color = event.target.value; }
             } 
 
 
             var colorsOne; 
-            var defaultColorOne = "#182F6D"; 
+            var defaultColorOne = "#E6E7E8"; 
             window.addEventListener("load", startupOne, false); 
             function startupOne() { 
                 colorsOne = document.querySelector("#colorOnePicker"); 
@@ -53,14 +53,14 @@
                 colorsOne.select(); 
             } 
             function updateOne(event) { 
-                var q = document.querySelector(`.${content[0].titleOneClass}`); 
+                var q = document.querySelector(`.${content[3].titleOneClass}`); 
                 if (q)  
                 { q.style.color = event.target.value; }
             } 
 
 
             var colorsTwo; 
-            var defaultColorTwo = "#1E1E1E"; 
+            var defaultColorTwo = "#E6E7E8"; 
             window.addEventListener("load", startupTwo, false); 
             function startupTwo() { 
                 colorsTwo = document.querySelector("#colorTwoPicker"); 
@@ -69,14 +69,14 @@
                 colorsTwo.select(); 
             } 
             function updateTwo(event) { 
-                var r = document.querySelector(`.${content[0].titleTwoClass}`); 
+                var r = document.querySelector(`.${content[3].titleTwoClass}`); 
                 if (r)  
                 { r.style.color = event.target.value; }
             } 
 
 
             var colorsThree; 
-            var defaultColorThree = "#D71D2C"; 
+            var defaultColorThree = "#E6E7E8"; 
             window.addEventListener("load", startupThree, false); 
             function startupThree() { 
                 colorsThree = document.querySelector("#colorThreePicker"); 
@@ -85,7 +85,7 @@
                 colorsThree.select(); 
             } 
             function updateThree(event) { 
-                var s = document.querySelector(`.${content[0].titleThreeClass}`); 
+                var s = document.querySelector(`.${content[3].titleThreeClass}`); 
                 if (s)  
                 { s.style.color = event.target.value; }
             }

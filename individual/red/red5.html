@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webpage Title</title>
+    <link rel="stylesheet" href="../data.css">
+    <script  src="../data.js"></script>
+    <script src="../nav.js"></script>
+</head>
+<body>
+
+    <nav>
+    </nav>
+
+    <main>  
+    </main>
+    
+    <footer>
+    </footer>
+
+</body>
+
+<script>
+    generateMain(content[17]);
+    generateCommon(content[17]);
+    generateColorSwatches(content[17].color)
+
+    var colorsTwo; 
+            var defaultColorTwo = "#E6E7E8"; 
+            window.addEventListener("load", startupTwo, false); 
+            function startupTwo() { 
+                colorsTwo = document.querySelector("#colorTwoPicker"); 
+                colorsTwo.value = defaultColorTwo; 
+                colorsTwo.addEventListener("input", updateTwo, false); 
+                colorsTwo.select(); 
+            } 
+            function updateTwo(event) { 
+                var r = document.querySelector(`.${content[17].titleTwoClass}`); 
+                if (r)  
+                { r.style.color = event.target.value; }
+            } 
+
+            
+</script>
+
+</html>

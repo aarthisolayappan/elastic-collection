@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webpage Title</title>
+    <link rel="stylesheet" href="../data.css">
+    <script  src="../data.js"></script>
+    <script src="../nav.js"></script>
+</head>
+<body>
+
+    <nav>
+    </nav>
+
+    <main>  
+    </main>
+    
+    <footer>
+    </footer>
+
+</body>
+
+<script>
+    generateMain(content[20]);
+    generateCommon(content[20]);
+    generateColorSwatches(content[20].color)
+   
+
+            var colorsOne; 
+            var defaultColorOne = "#1E1E1E"; 
+            window.addEventListener("load", startupOne, false); 
+            function startupOne() { 
+                colorsOne = document.querySelector("#colorOnePicker"); 
+                colorsOne.value = defaultColorOne; 
+                colorsOne.addEventListener("input", updateOne, false); 
+                colorsOne.select(); 
+            } 
+            function updateOne(event) { 
+                var q = document.querySelector(`.${content[20].titleOneClass}`); 
+                if (q)  
+                { q.style.color = event.target.value; }
+            } 
+
+
+            var colorsTwo; 
+            var defaultColorTwo = "#1E1E1E"; 
+            window.addEventListener("load", startupTwo, false); 
+            function startupTwo() { 
+                colorsTwo = document.querySelector("#colorTwoPicker"); 
+                colorsTwo.value = defaultColorTwo; 
+                colorsTwo.addEventListener("input", updateTwo, false); 
+                colorsTwo.select(); 
+            } 
+            function updateTwo(event) { 
+                var r = document.querySelector(`.${content[19].titleTwoClass}`); 
+                if (r)  
+                { r.style.color = event.target.value; }
+            } 
+
+            
+</script>
+
+</html>

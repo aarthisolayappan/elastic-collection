@@ -45,7 +45,8 @@ nav{
     position: absolute;
     width: 100vw;
     justify-content: space-between;
-    padding: 21px
+    padding: 21px;
+    z-index: 100;
 }
 
 .menu, .reveal{
@@ -190,11 +191,14 @@ img{
     position: absolute;
     object-fit: scale-down;
     align-items: center;
+    top: -30px;
     justify-content: center;
     max-width: 100%;
-    scale: 120%;
+    scale: 105%;
     /* padding-top: 100px; */
     grid-area: 1 / 2 / 10 / 3;
+    z-index: 10;
+
 }
 
 
@@ -203,6 +207,7 @@ img{
     position: relative;
     overflow: visible;
     grid-area: 1 / 1 / 2 / 2;
+    z-index: 100;
 }
 
 .edit{
@@ -211,6 +216,7 @@ img{
     color: #00A14B;
     font-size: 3rem;
     text-align: center;
+    top: -60px;
 }
 
 
@@ -220,6 +226,11 @@ img{
     outline-color: #005735;
 }
 
+
+.titlesans, .titleser, .title1sans, .title1ser, .title2, .title2ser, .title3{
+    z-index: 50;
+    white-space: nowrap;
+}
 
 .titlesans{
     position: absolute;
@@ -261,6 +272,16 @@ img{
 .title2{
     position: absolute;
     font-family: sansbb;
+    font-size: 2.3rem;
+    line-height: 2.4rem;
+    grid-area: 6 / 1 / 7 / 2;
+    padding-left: 60px;
+   }
+
+
+.title2ser{
+    position: absolute;
+    font-family: ser;
     font-size: 2.3rem;
     grid-area: 6 / 1 / 7 / 2;
     padding-left: 60px;
@@ -329,9 +350,10 @@ img{
     border-width: 14px;
     border-style: solid;
     scale: 75%;
-    top: -43px;
+    top: -53px;
     visibility: hidden;
     transform: rotate(-5deg);
+    z-index: 55;
 }
 
 .showImage{
@@ -393,12 +415,13 @@ img{
     }
     
     img{
-        scale: 135%;
-        padding-top: 140px;
+        scale: 155%;
         padding-bottom: 30px;
         grid-area: 2 / 2 / 6 / 3;
         align-self: center;
         justify-self: center;
+        top: -2px;
+
     }
     
     
@@ -450,6 +473,13 @@ img{
         padding-left: 0px;
         padding-bottom: 30px;
     }
+
+    .title2ser{
+        font-size: 2.3rem;
+        grid-area: 5 / 1 / 6 / 2;
+        padding-left: 0px;
+        padding-bottom: 30px;
+    }
     
     
     .title3{
@@ -462,6 +492,7 @@ img{
 
     .bodytext1, .bodytext2, .bodytext3, .bodytext4 {
         padding-top: 0px;
+        z-index: 100;
     }
 
     .bodytext1, .bodytext2, .bodytext3, .bodytext4{
@@ -488,9 +519,9 @@ img{
     
     
     .realimage{
-        border-width: 11px;
-        scale: 87%;
-        top: -70px;
+        border-width: 10px;
+        scale: 97%;
+        top: -40px;
         padding: 0px;
     }
 
@@ -602,6 +633,14 @@ img{
         padding-left: 0px;
         padding-bottom: 30px;
     }
+
+    .title2ser{
+        font-size: 1.8rem;
+        grid-area: 8 / 1 / 9 / 2;
+        padding-left: 0px;
+        padding-bottom: 30px;
+    }
+    
     
     
     .title3{
@@ -666,6 +705,7 @@ img{
     
     .roadsignname{
         font-size: 2rem;
+        line-height: 2.5rem;
     }
     
     .roadsigndescription{
@@ -699,8 +739,8 @@ img{
     }
     
     img{
-        scale: 125%;
-        top: 20px;
+        scale: 105%;
+        top: -70px;
         padding-bottom: 200px;
         grid-area: 1 / 1 / 5 / 2;
         align-self: center;
@@ -746,6 +786,13 @@ img{
     
     
     .title2{
+        font-size: 1.6rem;
+        grid-area: 8 / 1 / 9 / 2;
+        padding-left: 0px;
+        padding-bottom: 30px;
+    }
+
+    .title2ser{
         font-size: 1.8rem;
         grid-area: 8 / 1 / 9 / 2;
         padding-left: 0px;
@@ -766,7 +813,7 @@ img{
     }
 
     .bodytext1, .bodytext2, .bodytext3, .bodytext4{
-        padding-left: 20px;
+        padding-left: 0px;
         padding-bottom: 0px;
         font-size: 1rem;
     }
@@ -811,9 +858,11 @@ img{
         grid-template-rows: repeat(2, 124px);
         width: 100vw;
         column-gap: 30px;
-        overflow: visible;
-        bottom: 0px;
-        padding: 21px;
+        overflow: hidden;
+        bottom: 21px;
+        padding-left: 21px;
+        padding-right: 21px;
+
     }
     
     .roadsignname{
@@ -856,8 +905,8 @@ img{
     }
     
     img{
-        scale: 145%;
-        top: -150px;
+        scale: 110%;
+        top: -200px;
         padding-bottom: 3px;
         grid-area: 1 / 1 / 5 / 2;
         align-self: center;
@@ -909,6 +958,12 @@ img{
         padding-bottom: 20px;
     }
     
+    .title2ser{
+        font-size: 1.6rem;
+        grid-area: 6 / 1 / 7 / 2;
+        padding-left: 0px;
+        padding-bottom: 20px;
+    }
     
     .title3{
         font-size: 1.2rem;
@@ -928,10 +983,11 @@ img{
 
     .bodytext1, .bodytext2, .bodytext3, .bodytext4 {
         padding-top: 0px;
+        z-index: 100;
     }
 
     .bodytext1, .bodytext2, .bodytext3, .bodytext4{
-        padding-left: 20px;
+        padding-left: 0px;
         padding-bottom: 0px;
         font-size: 0.8rem;
     }

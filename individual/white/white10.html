@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Webpage Title</title>
+    <link rel="stylesheet" href="../data.css">
+    <script  src="../data.js"></script>
+    <script src="../nav.js"></script>
+</head>
+<body>
+
+    <nav>
+    </nav>
+
+    <main>  
+    </main>
+    
+    <footer>
+    </footer>
+
+</body>
+
+<script>
+    generateMain(content[14]);
+    generateCommon(content[14]);
+    generateColorSwatches(content[14].color)
+
+    var colors; 
+            var defaultColor = "#1E1E1E"; 
+            window.addEventListener("load", startup, false); 
+            function startup() { 
+                colors = document.querySelector("#colorPicker"); 
+                colors.value = defaultColor; 
+                colors.addEventListener("input", update, false); 
+                colors.select(); 
+            } 
+            function update(event) { 
+                var p = document.querySelector(`.${content[14].bigTitleClass}`); 
+                if (p)  
+                { p.style.color = event.target.value; }
+            } 
+
+            
+</script>
+
+</html>

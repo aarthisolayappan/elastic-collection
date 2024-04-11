@@ -6,6 +6,7 @@ const images =
         "color": "red",
         "shape": "rectangle",
         "type": "sans",
+        "page": "red/red1.html",
     },
     
     {
@@ -13,6 +14,7 @@ const images =
         "img": "red3.JPG",
         "color": "red",
         "shape": "circle",
+        "page": "red/red3.html",
         "type": "sans",
     },
     {
@@ -27,7 +29,15 @@ const images =
         "img": "yellow4.JPG",
         "color": "yellow",
         "shape": "rectangle",
-        "page": "individual/yellow4.html",
+        "page": "yellow/yellow4.html",
+        "type": "sans",
+    },
+    {
+        "title": "duplicate-keys",
+        "img": "blue3.JPG",
+        "color": "blue",
+        "page": "blue/blue3.html",
+        "shape": "rectangle",
         "type": "sans",
     },
     {
@@ -42,6 +52,15 @@ const images =
         "img": "red5.JPG",
         "color": "red",
         "shape": "rectangle",
+        "page": "red/red5.html",
+        "type": "sans",
+    },
+    {
+        "title": "dont-be-like-a-cigarette",
+        "img": "yellow5.png",
+        "color": "yellow",
+        "shape": "rectangle",
+        "page": "yellow/yellow5.html",
         "type": "sans",
     },
     {
@@ -49,6 +68,7 @@ const images =
         "img": "white2.JPG",
         "color": "white",
         "shape": "circle",
+        "page": "white/white2.html",
         "type": "sans",
     },
     {
@@ -57,6 +77,7 @@ const images =
         "color": "red",
         "shape": "rectangle",
         "type": "sans",
+        "page": "red/red6.html",
     },
     {
         "title": "littering-fine",
@@ -78,21 +99,9 @@ const images =
         "color": "red",
         "shape": "circle",
         "type": "sans",
+        "page": "red/red7.html",
     },
-    {
-        "title": "kitchen-washing-man",
-        "img": "white1.JPG",
-        "color": "white",
-        "shape": "rectangle",
-        "type": "serif",
-    },
-    {
-        "title": "dont-be-like-a-cigarette",
-        "img": "yellow5.png",
-        "color": "yellow",
-        "shape": "rectangle",
-        "type": "sans",
-    },
+
     {
         "title": "kingz-shoe-shop",
         "img": "red2.JPG",
@@ -104,6 +113,7 @@ const images =
         "title": "satanise-your-hands",
         "img": "white4.JPG",
         "color": "white",
+        "page": "white/white4.html",
         "shape": "rectangle",
         "type": "sans",
     },
@@ -118,6 +128,7 @@ const images =
         "title": "do-not-sit-here",
         "img": "white6.JPG",
         "color": "white",
+        "page": "white/white6.html",
         "shape": "circle",
         "type": "sans",
     },
@@ -132,6 +143,7 @@ const images =
         "title": "diesel",
         "img": "white8.JPG",
         "color": "white",
+        "page": "white/white8.html",
         "shape": "circle",
         "type": "sans",
     },
@@ -146,6 +158,7 @@ const images =
         "title": "use-dustbin",
         "img": "white10.JPG",
         "color": "white",
+        "page": "white/white10.html",
         "type": "serif",
         "shape": "rectangle",
     },
@@ -153,16 +166,11 @@ const images =
         "title": "namaskara",
         "img": "white11.JPG",
         "color": "white",
+        "page": "white/white11.html",
         "type": "sans",
         "shape": "rectangle",
     },
-    {
-        "title": "wanted-drivers",
-        "img": "white12.JPG",
-        "color": "white",
-        "shape": "rectangle",
-        "type": "serif",
-    },
+    
     {
         "title": "surveillance",
         "img": "white13.JPG",
@@ -174,12 +182,14 @@ const images =
         "title": "compost-pit",
         "img": "blue1.JPG",
         "color": "blue",
+        "page": "blue/blue1.html",
         "shape": "rectangle",
         "type": "sans",
     },
     {
         "title": "toilet-drinking-water",
         "img": "blue2.JPG",
+        "page": "blue/blue2.html",
         "color": "blue",
         "shape": "rectangle",
         "type": "sans",
@@ -192,8 +202,16 @@ const images =
         "type": "sans",
     },
     {
+        "title": "wanted-drivers",
+        "img": "white12.JPG",
+        "color": "white",
+        "shape": "rectangle",
+        "type": "serif",
+    },
+    {
         "title": "exit",
         "img": "green1.JPG",
+        "page": "green/green1.html",
         "color": "green",
         "shape": "rectangle",
         "type": "sans",
@@ -202,6 +220,7 @@ const images =
         "title": "very-strictly",
         "img": "green2.JPG",
         "color": "green",
+        "page": "green/green2.html",
         "shape": "rectangle",
         "type": "sans",
     },
@@ -209,8 +228,17 @@ const images =
         "title": "speed-hump-ahead",
         "img": "yellow1.JPG",
         "color": "yellow",
+        "page": "yellow/yellow1.html",
         "shape": "triangle",
         "type": "sans",
+    },
+    {
+        "title": "kitchen-washing-man",
+        "img": "white1.JPG",
+        "color": "white",
+        "shape": "rectangle",
+        "page": "white/white1.html",
+        "type": "serif",
     },
     {
         "title": "fast-could-be-last",
@@ -218,6 +246,7 @@ const images =
         "color": "yellow",
         "shape": "rectangle",
         "type": "sans",
+        "page": "yellow/yellow2.html",
     },
     {
         "title": "date-on-bumble",
@@ -225,6 +254,7 @@ const images =
         "color": "yellow",
         "shape": "rectangle",
         "type": "sans",
+        "page": "yellow/yellow3.html",
     },
         
 ]
@@ -244,7 +274,7 @@ let showCategory = 'all';
 
 function generateImages(sign) {
     const imageElement = sign.img ? `<img src="../img/${sign.img}" alt="${sign.title}">` : '';
-    const linkElement = sign.page ? `<a href="../${sign.page}">${imageElement}</a>` : imageElement;
+    const linkElement = sign.page ? `<a href="../individual/${sign.page}">${imageElement}</a>` : imageElement;
 
     if (toolbox) {
         toolbox.innerHTML += linkElement;

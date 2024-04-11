@@ -1,4 +1,4 @@
-fetch('./nav.html')
+fetch('../nav.html')
 .then(content => content.text())
 .then(html => {
     document.querySelector("nav").innerHTML = html;
