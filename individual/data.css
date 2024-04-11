@@ -854,7 +854,7 @@ img{
     }
 
     footer{
-        grid-template-columns: 140px 124px 70px;
+        grid-template-columns: 140px 124px 60px;
         grid-template-rows: repeat(2, 124px);
         width: 100vw;
         column-gap: 30px;
@@ -898,7 +898,7 @@ img{
         top: 43px;
         padding-left: 55px;
         padding-right: 55px;
-        height: 53vh;
+        height: 49vh;
         row-gap: 50px;
         overflow: visible;
 
