@@ -807,7 +807,7 @@ img{
     }
 
     footer{
-        grid-template-columns: 140px 124px 75px;
+        grid-template-columns: 140px 124px 70px;
         grid-template-rows: repeat(2, 124px);
         width: 100vw;
         column-gap: 30px;
