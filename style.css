@@ -239,10 +239,12 @@ a{
 
 
 @media screen and (max-width: 430px) {
+
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(88px, 1fr)); 
         padding: 0.5rem; 
         margin-top: 10px;
+        overflow: hidden;
     }
 
     img{
@@ -250,7 +252,7 @@ a{
     }
 
     .flex{
-        top: -60px;
+        top: -80px;
     }
     
     

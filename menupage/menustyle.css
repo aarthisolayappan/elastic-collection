@@ -506,8 +506,6 @@ img{
         width: 80px;
     }
 
-    
-
     .flex{
         margin-left: -180px;
     }
@@ -517,6 +515,7 @@ img{
         -webkit-text-stroke-width: 1px;
         letter-spacing: -4px;
         text-shadow:  3px 3px 0 black;
+        overflow: hidden;
     }
     
     
@@ -526,6 +525,8 @@ img{
         -webkit-text-stroke-width: 0.01px;
         letter-spacing: -3px;
         text-shadow:  0.1px 0.1px 0 black;
+        overflow: hidden;
+
     }
 
     .shape{
@@ -534,10 +535,14 @@ img{
         margin: -16px;
         flex-wrap: wrap; 
         flex-flow: row;
+        overflow: hidden;
+
     }
 
     .square, .circle, .triangle{
         scale: 0.55;
+        overflow: hidden;
+
     }
 
     .circle{
@@ -556,6 +561,8 @@ img{
         column-gap: 16px;
         margin: 12px;
         bottom: 0px;
+        overflow: hidden;
+
     }
 
     .sans, .serif, .sansserif{
@@ -563,6 +570,8 @@ img{
         height: 160px;
         width: 200px;
         border-width: 3px;
+        overflow: hidden;
+
     } 
 
     .sans{
@@ -581,14 +590,20 @@ img{
     
     .sans1{
         font-size: 4rem;
+        overflow: hidden;
+
     }
     
     .serif1{
         font-size: 4rem;
+        overflow: hidden;
+
     }
 
     .red, .white, .yellow, .blue, .green{
         height: 200px;
         border-width: 3px;
+        overflow: hidden;
+
     }
 }
