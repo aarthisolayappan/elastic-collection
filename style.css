@@ -82,6 +82,7 @@ h1, h2{
     grid-template-columns: repeat(auto-fit, minmax(187px, 1fr)); /* Adjust min-width */
     align-items: center;
     justify-items: center;
+    overflow: hidden;
 }
 
 img{
