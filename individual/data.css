@@ -67,6 +67,7 @@ nav{
     color: black;
     outline-color: black;
     transform: rotate(-5deg);
+    cursor: pointer;
 }
 
 

@@ -27,6 +27,7 @@ const images =
         "img": "yellow4.JPG",
         "color": "yellow",
         "shape": "rectangle",
+        "page": "individual/yellow4.html",
         "type": "sans",
     },
     {
@@ -208,7 +209,6 @@ const images =
         "title": "speed-hump-ahead",
         "img": "yellow1.JPG",
         "color": "yellow",
-        "page": "individual/yellow1.html",
         "shape": "triangle",
         "type": "sans",
     },
@@ -243,10 +243,22 @@ let showCategory = 'all';
 
 
 function generateImages(sign) {
-    toolbox.innerHTML += `
-        ${sign.img ? `<img src="../img/${sign.img}" alt="${sign.title}">` : ''}
-    `;
+    const imageElement = sign.img ? `<img src="../img/${sign.img}" alt="${sign.title}">` : '';
+    const linkElement = sign.page ? `<a href="../${sign.page}">${imageElement}</a>` : imageElement;
+
+    if (toolbox) {
+        toolbox.innerHTML += linkElement;
+    } else {
+        console.error("Unable to find 'toolbox' element.");
+    }
 }
+
+// function generateImages(sign) {
+//     toolbox.innerHTML += `
+//         ${sign.img ? `<img src="../img/${sign.img}" alt="${sign.title}">` : ''}
+//         ${sign.page ? `<a href="individual/yellow1.html"></a>` : ''}
+//     `;
+// }
 
 for(let sign=0; sign< images.length; sign++){
     generateImages(images[sign]);

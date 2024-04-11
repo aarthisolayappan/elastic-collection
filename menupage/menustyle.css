@@ -64,6 +64,7 @@ h1, h2{
 .bang:hover{
     transform: skew(0deg, 0deg);
     color: azure;
+    cursor: pointer;
 }
 
 
@@ -87,12 +88,16 @@ h1, h2{
 
 a{
     text-decoration: none;
+    overflow: visible;
+    margin-bottom: -200px;
 }
 
 .home:hover{
     color: black;
     outline-color: black;
     transform: rotate(-5deg);
+    cursor: pointer;
+
 }
 
 
