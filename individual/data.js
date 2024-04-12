@@ -101,7 +101,7 @@ const content =
         "bodyText4":'bodytext4',
         "textThreecolor": 'whitetext',
 
-        "header1": "Auto (Rickshaw) Sign",
+        "header1": "Auto Sign",
         "headerClass": 'roadsignname',
 
         "h1define": "this is sample text to see if the layout is working. please ignore this text i dont know what thus is this might be an explanation of what i think of the sign (from the eye of a graphic designer)",
