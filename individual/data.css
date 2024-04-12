@@ -854,8 +854,8 @@ img{
     }
 
     footer{
-        grid-template-columns: 140px 124px 60px;
-        grid-template-rows: repeat(2, 124px);
+        grid-template-columns: 160px 124px 50px;
+        grid-template-rows: repeat(2, 90px);
         width: 100vw;
         column-gap: 30px;
         overflow: hidden;
@@ -866,7 +866,7 @@ img{
     }
     
     .roadsignname{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         overflow: visible;
 
     }
