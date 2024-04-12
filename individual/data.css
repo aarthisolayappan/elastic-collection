@@ -935,7 +935,7 @@ img{
     }
     
     .title1sans{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         letter-spacing: -1px;
         grid-area: 5 / 1 / 6 / 2;
         padding-left: 0px;
@@ -944,7 +944,7 @@ img{
     
     
     .title1ser{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         letter-spacing: -1px;
         grid-area: 5 / 1 / 6 / 2;
         padding-left: 0px;
